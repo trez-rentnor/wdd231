@@ -1,0 +1,32 @@
+{
+    "families": [
+        {
+            "surname": "Jones",
+            "move_in_date": "2012-04-23",
+            "family_size": 4,
+            "bishopbric_visit?": true,
+            "family_members": [
+                {
+                    "name": "Larry",
+                    "gender": "male",
+                    "birth_date": "1970-03-12"
+                },
+                {
+                    "name": "Susan",
+                    "gender": "famale",
+                    "birth_date": "1972-08-29"
+                },
+                {
+                    "name": "Chris",
+                    "gender": "male",
+                    "birth_date": "2010-02-23"
+                },
+                {
+                    "name": "Jane",
+                    "gender": "female",
+                    "birth_date": "2015-01-07"
+                }
+            ]
+        }
+    ]
+}
