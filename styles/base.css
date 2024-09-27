@@ -1,0 +1,43 @@
+:root {
+    --vanilla: #dbe2a1;
+    --mindaro: #dde392ff;
+    --drab-dark-brown: #504b3aff;
+
+    --heading-font: 'Kanit', sans-serif;
+    --paragraph-font: 'Quicksand', sans-serif;
+
+    --border-radius: 0.5rem;
+    --max-width: 1000px;
+}
+
+* {
+    font-family: var(--paragraph-font);
+}
+
+header {
+    background-color: var(--mindaro);
+    padding: 20px;
+    border: 1px solid var(--drab-dark-brown);
+    grid-gap: 1rem;
+    display: block;
+}
+
+/* Small view menu */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+	color: #000;
+    position: absolute;
+	top: 3.2rem;
+	right: 2rem;
+}
+
+#menu::before {
+	content: "☰";
+    color: var(--drab-dark-brown);
+}
+
+#menu.open::before {
+	content: "❎";
+}
