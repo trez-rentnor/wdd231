@@ -32,7 +32,6 @@ footer {
 .header_text {
     padding: 1rem;
     display: flex;
-    align-items: space-around;
     justify-content: center;
     font-family: var(--heading-font);
 }
@@ -111,15 +110,15 @@ main {
 }
 
 #course_work {
-    flex: 2 2 2fr;
+    flex: 1 1 content;
 }
 
 #location {
-    flex: 1 1 1fr;
+    flex: 2 2 content;
 }
 
 #certificates {
-    flex: 3 3 3fr;
+    flex: 3 3 content;
 }
 
 figure {
