@@ -16,10 +16,6 @@
     color: var(--drab-dark-brown);
 }
 
-body {
-    min-width: 480px;
-}
-
 h2 {
     text-align: center;
 }
