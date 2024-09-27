@@ -1,8 +1,9 @@
 :root {
-    --vanilla: #dbe2a1;
+    /* Color Palette source https://coolors.co/dde392-afbe8f-7d8570-646f58-504b3a */
     --mindaro: #dde392ff;
+    --sage: #afbe8f;
+    --reseda-green: #7d8570;
     --drab-dark-brown: #504b3aff;
-
     --heading-font: 'Kanit', sans-serif;
     --paragraph-font: 'Quicksand', sans-serif;
 
@@ -14,12 +15,17 @@
     font-family: var(--paragraph-font);
 }
 
+h1 {
+    color: var(--drab-dark-brown);
+}
+
 header {
     background-color: var(--mindaro);
     padding: 20px;
     border: 1px solid var(--drab-dark-brown);
     grid-gap: 1rem;
     display: block;
+    font-family: var(--heading-font);
 }
 
 /* Small view menu */
@@ -40,4 +46,51 @@ header {
 
 #menu.open::before {
 	content: "❎";
+}
+
+#navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: var(--drab-dark-brown);
+	color: var(--mindaro);
+    margin: 0;
+}
+
+#navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: var(--mindaro);
+}
+
+#navigation a.active {
+	background-color: var(--mindaro);
+	color: var(--drab-dark-brown);
+}
+
+#navigation a:hover {
+    background-color: var(--mindaro);
+    color: var(--drab-dark-brown);
+}
+
+#navigation.open a {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    #menu {
+        display: none;
+    }
+
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #navigation a {
+        display: block;
+    }
 }
