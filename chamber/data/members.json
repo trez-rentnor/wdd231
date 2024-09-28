@@ -1,0 +1,65 @@
+[
+    {
+        "name": "100.7 JACK-FM",
+        "address": "9660 Granite Ridge Drive, Suite 100",
+        "phone": "(858) 571-8888",
+        "website": "http://987jack.com",
+        "image": "data/images/ktxnfm-logo1.webp",
+        "membership-level": "member",
+        "industry": "Media"
+    },
+    {
+        "name": "160 Driving Academy",
+        "address": "9660 Granite Ridge Drive, Suite 100",
+        "phone": "(619) 860-8620",
+        "website": "http://160drivingacademy.com",
+        "image": "data/images/160-driving-logo.webp",
+        "membership-level": "member",
+        "industry": "Transportation"
+    },
+    {
+        "name": "1st Century Bank",
+        "address": "9660 Granite Ridge Drive, Suite 100",
+        "phone": "(619) 376-4011",
+        "website": "http://1cbank.com",
+        "image": "data/images/1cbank-logo.webp",
+        "membership-level": "gold",
+        "industry": "Banking"
+    },
+    {
+        "name": "211 of San Diego County",
+        "address": "9660 Granite Ridge Drive, Suite 100",
+        "phone": "(858) 300-1300",
+        "website": "http://www.211sandiego.org",
+        "image": "data/images/211-Logo-Transparent-300x157.webp",
+        "membership-level": "member",
+        "industry": "Civic and Social Service Organizations"
+    },
+    {
+        "name": "4 Walls International",
+        "address": "9660 Granite Ridge Drive, Suite 100",
+        "phone": "(619) 451-9727",
+        "website": "http://4wallsintl.org",
+        "image": "data/images/logo_web2.webp",
+        "membership-level": "silver",
+        "industry": "Civic and Social Service Organization"
+    },
+    {
+        "name": "760 KFMB AM",
+        "address": "9660 Granite Ridge Drive, Suite 100",
+        "phone": "(858) 495-8663",
+        "website": "http://www.760kfmb.com/kfmb_info/",
+        "image": "data/images/KFMB_AM_logo_2006.svg.webp",
+        "membership-level": "member",
+        "industry": "Media"
+    },
+    {
+        "name": "A.O. Reed & Co.",
+        "address": "9660 Granite Ridge Drive, Suite 100",
+        "phone": "(858) 565-4131",
+        "website": "http://aoreed.com",
+        "image": "data/images/AOReed_Legence_Logo-CMYK.webp",
+        "membership-level": "silver",
+        "industry": "Construction"
+    }
+]

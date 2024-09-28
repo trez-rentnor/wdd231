@@ -1,0 +1,310 @@
+:root {
+    /* Color palette source https://coolors.co/palette/780000-c1121f-fdf0d5-003049-669bbc */
+    --barn-red: hsla(0, 100%, 24%, 1);
+    --fire-brick: hsla(356, 83%, 41%, 1);
+    --background-color: hsla(40, 91%, 91%, 1);
+    --primary-color: hsla(201, 100%, 14%, 1);
+    --secondary-color: hsla(203, 39%, 57%, 1);
+    --text-color: var(--primary-color);
+    --white: hsla(0, 100%, 100%, 100%);
+}
+
+* {
+    font-family: "Moderustic", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 0;
+    margin: 0;
+}
+
+.title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+header a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+header a.active {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+header a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+#navigation-small {
+    display: none;
+}
+
+#navigation-large {
+    display: block;
+}
+
+#menu {
+    display: none;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    background-color: var(--background-color);
+    padding: 0.1rem 2rem 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+#grid-selector {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    gap: .5rem;
+}
+
+#grid-selector button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+#grid-selector button.active {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+#businesses.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+
+#businesses.grid .card {
+    border-radius: 0.5rem;
+    border: .1rem solid var(--primary-color);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    background-color: var(--white);
+    padding: 1rem;
+}
+
+#businesses.grid .card img {
+    max-height: 40%;
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+#businesses.grid .name {
+    display: none;
+}
+
+#businesses.list .card {
+    display: flex;
+    justify-content: space-between;
+}
+
+#businesses.list .card:nth-child(odd) {
+    background-color: var(--secondary-color);
+}
+
+#businesses.list .card img {
+    display: none;
+}
+
+#businesses.list .card p {
+    width: 25%;
+    text-align: left;
+}
+
+.card p {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    justify-content: space-between;
+    padding: 1rem;
+    display: flex;
+}
+
+#footer-contact {
+    justify-content: space-between;
+    width: 40%;
+}
+
+#footer-contact p {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0.2rem;
+}
+
+.name {
+    font-weight: bold;
+}
+
+#footer-address {
+    margin: .3rem 0 1rem;
+}
+
+#footer-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+
+#footer-social img {
+    width: 50%;
+}
+
+#footer-copyright {
+    width: 40%;
+}
+
+#footer-copyright p,
+#footer-copyright span {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    #menu {
+        display: block;
+        font-size: 3rem;
+        border: 0;
+        background: none;
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    #menu::before {
+        content: "☰";
+        color: var(--white);
+    }
+
+    #menu.open::before {
+        content: "❎";
+    }
+
+    #navigation-large {
+        display: none;
+    }
+
+    #navigation-small {
+        display: grid;
+        grid-template-rows: 0fr;
+        color: var(--white);
+        margin: 0;
+        transition: grid-template-rows 0.5s ease-out;
+    }
+
+    #navigation-small ul {
+        overflow: hidden;
+        background-color: var(--secondary-color);
+        margin: 0;
+        padding: 0;
+    }
+
+    #navigation-small a {
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: var(--white);
+    }
+
+    #navigation-small a.active {
+        color: var(--primary-color);
+        text-decoration: underline;
+    }
+
+    #navigation-small a:hover {
+        color: var(--primary-color);
+        text-decoration: underline;
+    }
+
+    #navigation-small.open {
+        grid-template-rows: 1fr;
+    }
+
+    #navigation-small.open a {
+        display: block;
+    }
+
+    #businesses.grid {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #businesses.grid .card {
+        border: 0;
+        border-radius: 0;
+        border-bottom: .1rem solid var(--primary-color);
+        border-top: .1rem solid var(--primary-color);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    #businesses.grid .card img {
+        max-height: 8rem;
+        max-width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #businesses.list .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #businesses.list .card p {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    #footer-contact {
+        width: 100%;
+    }
+
+    #footer-social {
+        width: 100%;
+    }
+
+    #footer-copyright {
+        width: 100%;
+    }
+}

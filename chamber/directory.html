@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>San Diego Chamber of Commerce</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="America's Finest Chamber of Commerce">
+        <meta name="author" content="Randy Jones">
+        <meta property="og:title" content="San Diego Chamber of Commerce">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Chamber of Commerce for America's Finest City, San Diego.">
+        <meta property="og:image" content="https://trez-rentnor.github.io/wdd231/chamber/images/skyline.jpg">
+        <meta property="og:url" content="https://trex-rentnor.github.io/wdd231/chamber/directory.html">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="icon" href="images/favicon.ico">
+
+        <script src="scripts/directory.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="title-row">
+                <img src="images/logo.webp" alt="San Diego Chamber of Commerce Logo">
+                <nav id="navigation-large">
+                    <a href="">Home</a>
+                    <a href="directory.html" class="active">Directory</a>
+                    <a href="">Join</a>
+                    <a href="">Discover</a>
+                </nav>
+                <button id="menu" title="Menu"></button>
+            </div>
+            <nav id="navigation-small">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="">Join</a></li>
+                    <li><a href="">Discover</a></li>
+                </ul>
+            </nav>
+            <div id="hero">
+                <img src="images/skyline.webp" alt="San Diego Skyline">
+            </div>
+        </header>
+
+        <main>
+            <div id="directory">
+                <h2>Business Directory</h2>
+                <div id="grid-selector">
+                    <button id="grid" class="active">⏹️Grid</button>
+                    <button id="list">📄List</button>
+                </div>
+                <div id="businesses" class="grid">
+                    <!-- Populated by javascript -->
+                </div>
+            </div>  
+        </main>
+
+        <footer>
+            <div id="footer-contact">
+                <p class="name">San Diego Chamber of Commerce</p>
+                <div id="footer-address">
+                    <p>1234 Chamber Way</p>
+                    <p>San Diego, CA 92101</p>
+                </div>
+                <p>info@sdchamber.org</p>
+                <p>(619) 123-4567</p>
+            </div>
+            <div id="footer-social">
+                <a href=""><img src="images/facebook.webp" alt="Facebook"></a>
+                <a href=""><img src="images/twitter.webp" alt="Twitter"></a>
+                <a href=""><img src="images/linkedin.webp" alt="LinkedIn"></a>
+            </div>
+            <div id="footer-copyright">
+                <p>WDD231 Class Project</p>
+                <p>Randy Jones</p>
+                <p>&copy; <span id="currentyear"></span> San Diego Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+        </footer>
+    </body>
+</html>
