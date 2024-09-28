@@ -29,6 +29,10 @@ header {
     padding: 2rem 1rem;
 }
 
+h1 {
+    color: var(--white)
+}
+
 header a {
     color: var(--white);
     text-decoration: none;
