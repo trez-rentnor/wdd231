@@ -4,8 +4,10 @@
         "address": "9660 Granite Ridge Drive, Suite 100",
         "phone": "(858) 571-8888",
         "website": "http://987jack.com",
+        "email": "info@987jack.com",
+        "tag": "Because not all music is good",
         "image": "data/images/ktxnfm-logo1.webp",
-        "membership-level": "member",
+        "membership_level": "member",
         "industry": "Media"
     },
     {
@@ -13,8 +15,10 @@
         "address": "9660 Granite Ridge Drive, Suite 100",
         "phone": "(619) 860-8620",
         "website": "http://160drivingacademy.com",
+        "email": "info@160drivingacademy.com",
+        "tag": "The driving force behind the wheel",
         "image": "data/images/160-driving-logo.webp",
-        "membership-level": "member",
+        "membership_level": "member",
         "industry": "Transportation"
     },
     {
@@ -22,8 +26,10 @@
         "address": "9660 Granite Ridge Drive, Suite 100",
         "phone": "(619) 376-4011",
         "website": "http://1cbank.com",
+        "email": "info@1cbank.com",
+        "tag": "Who do so many banks start with the word 'First'?",
         "image": "data/images/1cbank-logo.webp",
-        "membership-level": "gold",
+        "membership_level": "gold",
         "industry": "Banking"
     },
     {
@@ -31,8 +37,10 @@
         "address": "9660 Granite Ridge Drive, Suite 100",
         "phone": "(858) 300-1300",
         "website": "http://www.211sandiego.org",
+        "email": "info@211sandiego.com",
+        "tag": "We got the info",
         "image": "data/images/211-Logo-Transparent-300x157.webp",
-        "membership-level": "member",
+        "membership_level": "member",
         "industry": "Civic and Social Service Organizations"
     },
     {
@@ -40,8 +48,10 @@
         "address": "9660 Granite Ridge Drive, Suite 100",
         "phone": "(619) 451-9727",
         "website": "http://4wallsintl.org",
+        "email": "info@4wallsintl.com",
+        "tag": "Building a better world",
         "image": "data/images/logo_web2.webp",
-        "membership-level": "silver",
+        "membership_level": "silver",
         "industry": "Civic and Social Service Organization"
     },
     {
@@ -49,8 +59,10 @@
         "address": "9660 Granite Ridge Drive, Suite 100",
         "phone": "(858) 495-8663",
         "website": "http://www.760kfmb.com/kfmb_info/",
+        "email": "info@760kfmb.com",
+        "tag": "The talk of San Diego",
         "image": "data/images/KFMB_AM_logo_2006.svg.webp",
-        "membership-level": "member",
+        "membership_level": "member",
         "industry": "Media"
     },
     {
@@ -58,8 +70,10 @@
         "address": "9660 Granite Ridge Drive, Suite 100",
         "phone": "(858) 565-4131",
         "website": "http://aoreed.com",
+        "email": "info@aoreed.com",
+        "tag": "Within 50% of schedule and budget, most of the time",
         "image": "data/images/AOReed_Legence_Logo-CMYK.webp",
-        "membership-level": "silver",
+        "membership_level": "silver",
         "industry": "Construction"
     }
 ]

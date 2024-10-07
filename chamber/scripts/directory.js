@@ -1,32 +1,21 @@
-// Responsive main menu
-const hamButton = document.querySelector('#menu');
-const navigationSmall = document.querySelector('#navigation-small');
-
-hamButton.addEventListener('click', () => {
-	navigationSmall.classList.toggle('open');
-	hamButton.classList.toggle('open');
-});
-
 // Grid view selector
 const gridButton = document.querySelector('#grid');
 const listButton = document.querySelector('#list');
 const businessList = document.querySelector('#businesses');
-
 gridButton.addEventListener('click', () => {
 	businessList.classList.remove('list');
 	businessList.classList.add('grid');
 	gridButton.classList.add('active');
 	listButton.classList.remove('active');
 });
-
 listButton.addEventListener('click', () => {
 	businessList.classList.remove('grid');
 	businessList.classList.add('list');
 	listButton.classList.add('active');
 	gridButton.classList.remove('active');
 });
-
 // Populate businesses
+
 async function populateBusinesses() {
 	const response = await fetch('data/members.json');
 	const businesses = await response.json();
@@ -65,5 +54,4 @@ async function populateBusinesses() {
 		businessDiv.appendChild(card);
 	});
 }
-
 populateBusinesses();

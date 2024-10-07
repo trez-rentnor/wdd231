@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>San Diego Chamber of Commerce</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="America's Finest Chamber of Commerce">
+        <meta name="author" content="Randy Jones">
+        <meta property="og:title" content="San Diego Chamber of Commerce Home Page">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Home page for the Chamber of Commerce for America's Finest City, San Diego.">
+        <meta property="og:image" content="https://trez-rentnor.github.io/wdd231/chamber/images/skyline.jpg">
+        <meta property="og:url" content="https://trex-rentnor.github.io/wdd231/chamber/directory.html">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="icon" href="images/favicon.ico">
+
+        <script src="scripts/base.js" defer></script>
+        <script src="scripts/index.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="title-row">
+                <img src="images/logo.webp" alt="San Diego Chamber of Commerce Logo">
+                <h1>San Diego Chamber of Commerce</h1>
+                <nav id="navigation-large">
+                    <a href="">Home</a>
+                    <a href="directory.html" class="active">Directory</a>
+                    <a href="">Join</a>
+                    <a href="">Discover</a>
+                </nav>
+                <button id="menu" title="Menu"></button>
+            </div>
+            <nav id="navigation-small">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="">Join</a></li>
+                    <li><a href="">Discover</a></li>
+                </ul>
+            </nav>
+            <div id="hero">
+                <img src="images/skyline.webp" alt="San Diego Skyline">
+                <button id="call-to-action" onclick="location.href='join.html'">Join Now!</button>
+            </div>
+        </header>
+
+        <main>
+            <h2>Home</h2>
+            <div id="alerts">
+                <div id="events-card" class="card">
+                    <h3>Events</h3>
+                </div>
+                <div id="current-weather-card" class="card">
+                    <h3>Current Weather</h3>
+                    <div id="current-weather-content">
+                        <img id="weather-icon">
+                        <div id="weather-data">
+                            <p><span id="current-temp"></span>&deg F</p>
+                            <p><span id="current-condition"></span></p>
+                            <p>High: <span id="high"></span>&deg</p>
+                            <p>Low: <span id="low"></span>&deg</p>
+                            <p>Humidity: <span id="current-humidity"></span>%</p>
+                            <p>Sunrise: <span id="sunrise"></span></p>
+                            <p>Sunset: <span id="sunset"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="weather-forecast-card" class="card">
+                    <h3>Weather Forecast</h3>
+                    <div id="weather-forecast-content">
+                        <p>Today: <span id="today-high" class="forecast-field"></span><span class="forecast-field">&degF</span></p>
+                        <p><span id="second-day"></span>: <span id="second-day-high" class="forecast-field"></span><span class="forecast-field">&degF</span></p>
+                        <p><span id="third-day"></span>: <span id="third-day-high" class="forecast-field"></span><span class="forecast-field">&degF</span></p>
+                    </div> 
+                </div>
+            </div>
+            <div id="spotlights">
+                <div id="spotlight-1" class="card">
+                    <div class="spotlight-header">
+                        <div class="spotlight-name" id="spotlight1-name"></div>
+                        <div class="spotlight-tag" id="spotlight1-tag"></div>
+                    </div>
+                    <div class="spotlight-content" id="spotlight1-content">
+                        <img id="spotlight1-image">
+                        <div class="spotlight-text" id="spotlight1-text">
+                            <p><span class="spotlight-field">EMAIL:</span> <span id="spotlight1-email"></span></p>
+                            <p><span class="spotlight-field">PHONE:</span> <span id="spotlight1-phone"></span></p>
+                            <p><span class="spotlight-field">URL:</span> <span id="spotlight1-url"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="spotlight-2" class="card">
+                    <div class="spotlight-header">
+                        <div class="spotlight-name" id="spotlight2-name"></div>
+                        <div class="spotlight-tag" id="spotlight2-tag"></div>
+                    </div>
+                    <div class="spotlight-content" id="spotlight2-content">
+                        <img id="spotlight2-image">
+                        <div class="spotlight-text" id="spotlight2-text">
+                            <p><span class="spotlight-field">EMAIL:</span> <span id="spotlight2-email"></span></p>
+                            <p><span class="spotlight-field">PHONE:</span> <span id="spotlight2-phone"></span></p>
+                            <p><span class="spotlight-field">URL:</span> <span id="spotlight2-url"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="spotlight-3" class="card">
+                    <div class="spotlight-header">
+                        <div class="spotlight-name" id="spotlight3-name"></div>
+                        <div class="spotlight-tag" id="spotlight3-tag"></div>
+                    </div>
+                    <div class="spotlight-content" id="spotlight3-content">
+                        <img id="spotlight3-image">
+                        <div class="spotlight-text" id="spotlight3-text">
+                            <p><span class="spotlight-field">EMAIL:</span> <span id="spotlight3-email"></span></p>
+                            <p><span class="spotlight-field">PHONE:</span> <span id="spotlight3-phone"></span></p>
+                            <p><span class="spotlight-field">URL:</span> <span id="spotlight3-url"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div id="footer-contact">
+                <p class="name">San Diego Chamber of Commerce</p>
+                <div id="footer-address">
+                    <p>1234 Chamber Way</p>
+                    <p>San Diego, CA 92101</p>
+                </div>
+                <p>info@sdchamber.org</p>
+                <p>(619) 123-4567</p>
+            </div>
+            <div id="footer-social">
+                <a href=""><img src="images/facebook.webp" alt="Facebook"></a>
+                <a href=""><img src="images/twitter.webp" alt="Twitter"></a>
+                <a href=""><img src="images/linkedin.webp" alt="LinkedIn"></a>
+            </div>
+            <div id="footer-copyright">
+                <p>WDD231 Class Project</p>
+                <p>Randy Jones</p>
+                <p>&copy; <span id="currentyear"></span> San Diego Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+        </footer>
+    </body>
+</html>
