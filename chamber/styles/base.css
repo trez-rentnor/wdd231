@@ -144,6 +144,11 @@ main {
     flex: 2 2 0;
 }
 
+#current-weather-card,
+#weather-forecast-card {
+    flex: 1 1 0;
+}
+
 #spotlights {
     display: flex;
     flex-wrap: wrap;

@@ -31,8 +31,11 @@ async function apiFetch(url) {
 }
 
 function displayCurrentWeather(data) {
-    weatherIcon.src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    weatherIcon.alt = data.weather[0].description;
+    const weatherImg = document.createElement('img');
+    weatherImg.src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    weatherImg.alt = data.weather[0].description;
+    weatherIcon.appendChild(weatherImg);
+
     currentTemp.textContent = Math.round(data.main.temp);
     currentCondition.textContent = data.weather[0].main;
     high.textContent = Math.round(data.main.temp_max);
@@ -89,11 +92,15 @@ async function populateSpotlights() {
     for (let spotlightIndex = 1; spotlightIndex <= 3; spotlightIndex++) {
         const randomIndex = Math.floor(Math.random() * qualifiedBusinesses.length);
         const spotlightBusiness = qualifiedBusinesses.splice(randomIndex, 1)[0];
-        document.getElementById(`spotlight${spotlightIndex}-image`).src = spotlightBusiness.image;
-        document.getElementById(`spotlight${spotlightIndex}-image`).alt = `${spotlightBusiness.name} Logo`;
         document.getElementById(`spotlight${spotlightIndex}-name`).textContent = spotlightBusiness.name;
         document.getElementById(`spotlight${spotlightIndex}-tag`).textContent = spotlightBusiness.tag;
         document.getElementById(`spotlight${spotlightIndex}-phone`).textContent = spotlightBusiness.phone;
+
+        const spotlightImg = document.getElementById(`spotlight${spotlightIndex}-image`);
+        const img = document.createElement('img');
+        img.src = spotlightBusiness.image;
+        img.alt = `${spotlightBusiness.name} Logo`;
+        spotlightImg.appendChild(img);
         
         const emailLink = document.createElement('a');
         emailLink.href = `mailto:${spotlightBusiness.email}`;
